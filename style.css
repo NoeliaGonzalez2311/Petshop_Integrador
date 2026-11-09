@@ -87,6 +87,14 @@
   color: white;
   text-decoration: none;
 }
+.hamb {
+  display: none;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+}
 footer {
   background-color: #222222;
   color: white;
@@ -308,16 +316,27 @@ footer {
 
   .navegacion-barra-principal {
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     gap: 15px;
   }
 
+  .hamb {
+    display: block;
+    margin-left: auto;
+  }
+
   .menu {
-    flex-wrap: wrap;
-    justify-content: center;
+    display: none;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     margin-left: 0;
     gap: 15px;
+  }
+
+  .menu.open {
+    display: flex;
   }
 
   .conteiner-comedero {
